@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #f9faf6;
+    color: #1e2e1c;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+/* Типография */
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    color: #2b4b2b;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #2e4b2e;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: #6a7b5e;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+
+/* Хедер / Герой */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.hero-content {
+    flex: 1 1 400px;
+}
+
+.hero-badge {
+    background: #e0f0da;
+    color: #2e5c2e;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    border: 1px solid #bcdbb0;
+}
+
+.hero h1 {
+    margin-bottom: 24px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #3a4f3a;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-primary {
+    background: #2b4b2b;
+    color: white;
+    border: none;
+    padding: 14px 38px;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 10px 20px rgba(43, 75, 43, 0.2);
+}
+
+.btn-primary:hover {
+    background: #1f3a1f;
+}
+
+.offer-chip {
+    background: #ffebc8;
+    border-radius: 40px;
+    padding: 8px 22px;
+    font-weight: 600;
+    color: #8b5e2c;
+    display: inline-block;
+    border: 1px dashed #c7a15e;
+}
+
+.hero-image {
+    background: #dbe9cf;
+    width: 300px;
+    height: 300px;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid white;
+    box-shadow: 0 30px 40px #afc9a3;
+}
+
+.hero-emoji {
+    font-size: 8rem;
+}
+
+/* Секция "Мы верим" */
+.belief-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 80px 0;
+    background: #eef6e9;
+    padding: 60px 40px;
+    border-radius: 80px 80px 40px 40px;
+}
+
+.belief-text {
+    flex: 1 1 300px;
+}
+
+.belief-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+}
+
+.belief-text p {
+    color: #3e543a;
+    font-size: 1.1rem;
+}
+
+.stats-grid {
+    flex: 1 1 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f4f1f;
+}
+
+.stat-label {
+    color: #5a7153;
+    font-size: 0.9rem;
+}
+
+/* Продукты */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    margin: 40px 0 60px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 40px;
+    padding: 30px 20px 25px;
+    box-shadow: 0 20px 40px #dbe8d1;
+    border: 1px solid #ddecd2;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-emoji {
+    font-size: 3.8rem;
+    background: #f1f9ea;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    border: 2px solid #bcdbb0;
+}
+
+.product-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1e3a1e;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3b6e3b;
+    margin: 15px 0 10px;
+}
+
+.product-desc {
+    color: #556b4f;
+    border-top: 2px dotted #c5ddb7;
+    padding-top: 15px;
+}
+
+/* Карточка товара — второй файл */
+.featured-product {
+    background: #1e2e1c;
+    color: #f0f7e9;
+    border-radius: 80px;
+    padding: 60px 50px;
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.featured-info {
+    flex: 1 1 300px;
+}
+
+.featured-badge {
+    background: #e7c27d;
+    color: #1d331d;
+    padding: 8px 24px;
+    border-radius: 40px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.featured-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f3ffd8;
+    margin-bottom: 15px;
+}
+
+.featured-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c7f09c;
+    margin: 20px 0 25px;
+}
+
+.featured-desc {
+    color: #cbdbbd;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.featured-btn {
+    background: #c7f09c;
+    color: #1d331d;
+}
+
+.featured-btn:hover {
+    background: #b0dc84;
+}
+
+.certifications-grid {
+    flex: 2 1 500px;
+    background: #2b4027;
+    border-radius: 60px;
+    padding: 40px 35px;
+}
+
+.cert-title {
+    color: #ddf0cf;
+    margin-bottom: 25px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 15px 25px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e1f0d3;
+    border-bottom: 1px solid #5b7853;
+    padding-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.cert-item::before {
+    content: "🌱";
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.cert-footer {
+    color: #aacf9a;
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.cert-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cert-grid::-webkit-scrollbar-track {
+    background: #3b5635;
+    border-radius: 10px;
+}
+
+.cert-grid::-webkit-scrollbar-thumb {
+    background: #9bbf8b;
+    border-radius: 10px;
+}
+
+/* Отзыв */
+.testimonial {
+    background: #fffaf0;
+    padding: 60px 50px;
+    border-radius: 80px;
+    margin: 80px 0;
+    text-align: center;
+    border: 2px solid #fbefd2;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #2e462b;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.3;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #4a6b3f;
+}
+
+/* Статистика снизу */
+.stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    background: #dcedd1;
+    border-radius: 100px;
+    padding: 40px 30px;
+    margin-top: 50px;
+}
+
+.stat-block {
+    text-align: center;
+    min-width: 100px;
+}
+
+.stat-block .number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1b4d1b;
+}
+
+.stat-block .label {
+    color: #44633e;
+}
+
+/* Футер */
+.footer-note {
+    text-align: center;
+    color: #6b8263;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 2px solid #d0e2c4;
+}
